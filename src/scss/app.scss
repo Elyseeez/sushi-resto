@@ -1,0 +1,66 @@
+// @import 'fonts';
+// @import 'variables';
+@import 'libs/normalize';
+@import './fonts.scss';
+@import 'components/all';
+
+
+body {
+  // background-color: #E5E5E5 !important;
+  padding: 50px 0;
+  
+  @media (max-width: 768px) {
+    padding: 20px 0;
+  }
+
+  li {
+    margin-top: 10px;
+    }
+
+
+    a{ 
+      text-decoration: none;
+      color: black;
+    }
+    .wrapper {
+        width: calc(100vw - 100px);
+        height: 100%;
+        background-color: #fff;
+        margin: 0 auto;
+        border-radius: 10px;
+        max-width: 1400px;
+    }
+    .title {
+        font-size: 40px;
+        line-height: 75px;
+    }
+    .active {
+      position: relative;
+        &:after {
+            content: "";
+            background-image: url('../assets/taco.png');
+            background-repeat: no-repeat;
+            display: block;
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            top: -52px;
+            animation-duration: 1.5s;
+            animation-name: jump;
+            animation-iteration-count: infinite;
+            animation-direction: alternate
+         
+        }
+      }
+      @keyframes jump {
+        from {
+          margin-left: 50%;
+          width: 100%;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+  } 

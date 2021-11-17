@@ -1,0 +1,109 @@
+{
+    "sushi": [
+      {
+        "id": 0,
+        "imageUrl": "https://d3dhhe8yf3oa58.cloudfront.net/_next/image?url=/dishes/dish/QbysJjS_T3OBQMvcvVkLxQ.jpg&w=3840&q=75",
+        "name": "Smashed Avo",
+        "price": 20
+        
+      },
+      {
+        "id": 1,
+        "imageUrl": "https://d3dhhe8yf3oa58.cloudfront.net/_next/image?url=/dishes/dish/LF2THZdlRqiplCI4jjBsGw.jpg&w=3840&q=75",
+        "name": "Yin & Yang",
+        "price": 10
+        
+      },
+      {
+        "id": 2,
+        "imageUrl": "https://d3dhhe8yf3oa58.cloudfront.net/_next/image?url=/dishes/dish/64t1XEowRAGzFpqeLqyKJA.jpg&w=3840&q=75",
+        "name": "Pancakes",
+        "price": 25
+        
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://d3dhhe8yf3oa58.cloudfront.net/_next/image?url=/dishes/dish/uhI3c2mqRuu-2wN8UlI_AQ.jpg&w=3840&q=75",
+        "name": "Huevos Rancheros",
+        "price": 25
+        
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://d3dhhe8yf3oa58.cloudfront.net/_next/image?url=/dishes/dish/WTaL7MO_QeGmBco-30-NsQ.jpg&w=3840&q=75",
+        "name": "Rancheros (Tofu)",
+        "price": 25
+        
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://d3dhhe8yf3oa58.cloudfront.net/_next/image?url=/dishes/dish/oMd-MG-NSAauxBAob0DiZA.jpg&w=3840&q=75",
+        "name": "Breakkie Rolleg",
+        "price": 18
+        
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://d3dhhe8yf3oa58.cloudfront.net/_next/image?url=/dishes/dish/V2uDjjSdSd24GJnfR_qeVA.jpg&w=3840&q=75",
+        "name": "Breakkie Roll",
+        "price": 15
+        
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://d3dhhe8yf3oa58.cloudfront.net/_next/image?url=/dishes/dish/4h_Y1p5ZRvuoCALAfjJvFQ.jpg&w=3840&q=75g",
+        "name": "Burrito",
+        "price": 12
+        
+      },
+      {
+        "id": 8,
+        "imageUrl": "https://d3dhhe8yf3oa58.cloudfront.net/_next/image?url=/dishes/dish/5XR9FEw1TtGMJE8Moqi5ug.jpg&w=3840&q=75",
+        "name": "Tacos",
+        "price": 18
+      },
+      {
+        "id": 9,
+        "imageUrl": "https://d3dhhe8yf3oa58.cloudfront.net/_next/image?url=/dishes/dish/Dql7v5vYTdyOntSaXQtKdA.jpg&w=3840&q=75",
+        "name": "Korean Tofu Burger",
+        "price": 21
+      },
+      {
+        "id": 10,
+        "imageUrl": "https://d3dhhe8yf3oa58.cloudfront.net/_next/image?url=/dishes/dish/HejbB01nRpyVhp5klPPtKg.jpg&w=3840&q=75",
+        "name": "Korean Chicken Burger",
+        "price": 21
+      },
+      {
+        "id": 11,
+        "imageUrl": "https://d3dhhe8yf3oa58.cloudfront.net/_next/image?url=/dishes/dish/tPj1E_M3TaiUSL65KZhChg.jpg&w=3840&q=75",
+        "name": "Cheeseburger",
+        "price": 22
+      },
+      {
+        "id": 12,
+        "imageUrl": "https://d3dhhe8yf3oa58.cloudfront.net/_next/image?url=/dishes/dish/69yqefvgS9ygHp-nRAnubw.jpg&w=3840&q=75",
+        "name": "Nasi Goreng",
+        "price": 19
+      },
+      {
+        "id": 13,
+        "imageUrl": "https://d3dhhe8yf3oa58.cloudfront.net/_next/image?url=/dishes/dish/0fLWVcmPS1GK3Oc9yaKLow.jpg&w=3840&q=75",
+        "name": "Laksa",
+        "price": 20
+      },
+      {
+        "id": 14,
+        "imageUrl": "https://d3dhhe8yf3oa58.cloudfront.net/_next/image?url=/dishes/dish/vprEdnhdSLOu2olHmx3Bug.jpg&w=3840&q=75",
+        "name": "Falafel",
+        "price": 19
+      },
+      {
+        "id":15,
+        "imageUrl": "https://d3dhhe8yf3oa58.cloudfront.net/_next/image?url=/dishes/dish/2MLffv2HSB61TIDnkvGy_Q.jpg&w=3840&q=75",
+        "name": "BLT",
+        "price": 15
+      }
+      
+    ]
+  }
