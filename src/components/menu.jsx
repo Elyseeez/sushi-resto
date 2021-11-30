@@ -1,7 +1,17 @@
 import React from "react"; 
 import MenuItem from "./menu-item";
-
-function Menu ({items}) {
+import {useSelector, useDispatch,} from 'react-redux';
+import {fetchSushi} from '../redux/actions/sushi';
+function Menu () {
+    const dispatch = useDispatch();
+ 
+  const items = useSelector(({sushi}) => sushi.items);
+  React.useEffect (() =>  { 
+      if (!items.lenght) { 
+        dispatch(fetchSushi());
+      }
+  // eslint-disable-next-line    
+  }, []);
     return (
         <div className="menu">
 
