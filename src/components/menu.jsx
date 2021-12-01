@@ -1,11 +1,15 @@
 import React from "react"; 
-import MenuItem from "./menu-item";
+import MenuItem from "./sushi-block/menu-item";
+import LoadingBlock from "./sushi-block/loading-block";
 import {useSelector, useDispatch,} from 'react-redux';
 import {fetchSushi} from '../redux/actions/sushi';
 function Menu () {
-    const dispatch = useDispatch();
+  
+  const dispatch = useDispatch();
  
   const items = useSelector(({sushi}) => sushi.items);
+  const isLoaded = useSelector(({sushi}) => sushi.isLoaded);
+
   React.useEffect (() =>  { 
       if (!items.lenght) { 
         dispatch(fetchSushi());
@@ -15,11 +19,12 @@ function Menu () {
     return (
         <div className="menu">
 
-            {items && items.map((obj) => (
-                <MenuItem key={obj.id} 
+            {isLoaded ?
+             items.map((obj) =>  <MenuItem key={obj.id}
+                isLoading={true} 
                 {...obj}
-                />
-                ))}
+                />)
+                : Array(16).fill (<LoadingBlock />)}
            
         </div>
     )

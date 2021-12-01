@@ -1,6 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function MenuItem ({name, imageUrl, price}) {
+function MenuItem ({name, imageUrl, price, isLoading}) {
+   
     return (
         <>
         
@@ -18,5 +20,17 @@ function MenuItem ({name, imageUrl, price}) {
     
 }
 
+
+MenuItem.propTypes = {
+    name: PropTypes.string,
+    imageUrl: PropTypes.string,
+    price: PropTypes.number,
+  };
+
+MenuItem.defaulProps = { 
+    name: '---',
+    price: 0,
+    isLoading: false
+}
 
 export default MenuItem;
