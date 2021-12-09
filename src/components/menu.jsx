@@ -24,7 +24,8 @@ function Menu () {
                 isLoading={true} 
                 {...obj}
                 />)
-                : Array(16).fill (<LoadingBlock />)}
+                : Array(16).fill(0)
+                .map((_, index) => <LoadingBlock  key={index}/>)}
            
         </div>
     )

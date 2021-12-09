@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Header from './components/header';
 import Home from './components/home';
 import Menu from './components/menu';
+import Cart from './components/cart';
 import './scss/app.scss';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
        <Header/>
        <Route path="/Home" component={Home} exact/>
        <Route path="/menu" component={Menu} exact/>
+       <Route path="/cart" component={Cart} exact/>
      
     </div>
     </Router>
