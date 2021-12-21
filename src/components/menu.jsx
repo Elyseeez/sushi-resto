@@ -3,6 +3,8 @@ import MenuItem from "./sushi-block/menu-item";
 import LoadingBlock from "./sushi-block/loading-block";
 import {useSelector, useDispatch,} from 'react-redux';
 import {fetchSushi} from '../redux/actions/sushi';
+import {addSushiToCart} from '../redux/actions/cart';
+
 function Menu () {
   
   const dispatch = useDispatch();
@@ -16,11 +18,20 @@ function Menu () {
       }
   // eslint-disable-next-line    
   }, []);
+
+const handleAddSushiToCart= obj => { 
+  dispatch({
+    type: 'ADD_SUSHI_CART',
+    payload: obj,
+  });
+};
+
     return (
         <div className="menu">
 
             {isLoaded ?
-             items.map((obj) =>  <MenuItem key={obj.id}
+             items.map((obj) =>  <MenuItem onClickAddSushi={handleAddSushiToCart} 
+                key={obj.id}
                 isLoading={true} 
                 {...obj}
                 />)

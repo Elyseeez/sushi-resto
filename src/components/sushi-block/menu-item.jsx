@@ -1,7 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function MenuItem ({name, imageUrl, price, isLoading}) {
+function MenuItem ({id, name, imageUrl, price, onClickAddSushi}) {
+
+    const onAddSushi = () => {
+        const obj = {
+            id, 
+            name,
+            imageUrl, 
+            price 
+        };
+        onClickAddSushi(obj);
+    };
    
     return (
         <>
@@ -10,9 +20,7 @@ function MenuItem ({name, imageUrl, price, isLoading}) {
                 <img className="menu__img" src={imageUrl} alt="img"></img>
                     <div className="menu__title">{name}</div>
                     <div className="menu__price">Price: <span>${price}</span></div>
-                    <button onClick = {(e) => {
-                            e.preventDefault();
-                        } } 
+                    <button onClick={onAddSushi} 
                         className="menu__btn">Add to cart</button>      
             </li>
             </>
