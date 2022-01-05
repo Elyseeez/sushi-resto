@@ -1,7 +1,7 @@
 import React from 'react';
 import CartItem from './cart-item';
 import {useSelector, useDispatch} from 'react-redux';
-import {clearCart, removeCartItem} from '../redux/actions/cart';
+import {clearCart, removeCartItem, plusCartItem, minusCartItem} from '../redux/actions/cart';
 
 
 function Cart () {
@@ -21,6 +21,13 @@ function Cart () {
         dispatch(clearCart());
     }
 
+    const onPlusItem = (id) => { 
+        dispatch(plusCartItem(id));
+    }
+    const onMinusItem = (id) => { 
+        dispatch(minusCartItem(id));
+    }
+
     return( 
         <div className="cart">
             <div className="cart__items-list">
@@ -31,7 +38,9 @@ function Cart () {
                     price={obj.price} 
                     totalPrice={items[obj.id].totalPrice} 
                     totalCount={items[obj.id].items.length}
-                    onRemove={onRemoveItem} />
+                    onRemove={onRemoveItem}
+                    onMinus={onMinusItem}
+                    onPlus={onPlusItem} />
                 ))}
             
             </div>

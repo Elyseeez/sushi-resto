@@ -3,10 +3,18 @@ import round from '../assets/round.png';
 
 
 
-function CartItem ({id, name, imageUrl, totalPrice, totalCount, onRemove}) {
+function CartItem ({id, name, imageUrl, totalPrice, totalCount, onRemove, onMinus, onPlus}) {
 
     const handleRemoveClick = () => { 
         onRemove(id);
+    };
+
+    const handlePlusItem = () => {
+        onPlus(id);
+    };
+
+    const handleMinusItem = () => {
+        onMinus(id);
     };
 
     return( 
@@ -19,9 +27,9 @@ function CartItem ({id, name, imageUrl, totalPrice, totalCount, onRemove}) {
                     </div>
                     <div className="cart__item-price">{totalPrice}$</div>
                     <div className="cart__item-count">
-                        <button>-</button>
+                        <button onClick={handleMinusItem}>-</button>
                         <b>{totalCount}</b>
-                        <button>+</button>
+                        <button onClick={handlePlusItem}>+</button>
                     </div>
                     {/* <div className="cart__item-remove">x</div> */}
                     <div className="cart__item-remove">
