@@ -33,6 +33,7 @@ function Cart () {
             <div className="cart__items-list">
                 {addedSushi.map((obj) => (
                     <CartItem 
+                    key={obj.id}
                     id={obj.id}
                     name={obj.name} 
                     price={obj.price} 
