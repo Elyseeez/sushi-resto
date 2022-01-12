@@ -27,9 +27,9 @@ function CartItem ({id, name, imageUrl, totalPrice, totalCount, onRemove, onMinu
                     </div>
                     <div className="cart__item-price">{totalPrice}$</div>
                     <div className="cart__item-count">
-                        <button onClick={handleMinusItem}>-</button>
+                        <button onClick={handleMinusItem} className="cart__item-plus">-</button>
                         <b>{totalCount}</b>
-                        <button onClick={handlePlusItem}>+</button>
+                        <button onClick={handlePlusItem} className="cart__item-plus">+</button>
                     </div>
                     {/* <div className="cart__item-remove">x</div> */}
                     <div className="cart__item-remove">

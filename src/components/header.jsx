@@ -13,16 +13,16 @@ function Header () {
             <img src={logoPng} alt="logo" className="header__logo-img"/>
         </div>
             <ul className="header__menu-list">
-              <li>
-                  <img src={home} alt="home" />
+              <li className="header__menu-item">
+                  <img className="header__menu-img" src={home} alt="home" />
                   <Link to='/home'>Home</Link> 
               </li>
                 <li className="header__menu-item">
-                    <img src={menu} alt="menu" />
+                    <img className="header__menu-img" src={menu} alt="menu" />
                     <NavLink to='/menu' activeClassName="active">Menu</NavLink> 
                 </li>
                 <li className="header__menu-item">
-                    <img src={cart} alt="cart" />
+                    <img className="header__menu-img" src={cart} alt="cart" />
                     <NavLink to='/cart' activeClassName="active">Cart</NavLink> 
                 </li>
             </ul>

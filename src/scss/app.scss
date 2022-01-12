@@ -51,6 +51,11 @@ body {
             animation-direction: alternate
          
         }
+        @media  (min-width: 320px) { 
+          &:after {
+            content: none;
+          }
+        }
       }
       @keyframes jump {
         from {

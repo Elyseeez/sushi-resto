@@ -2,9 +2,17 @@
     // border-bottom: 1px solid;
     &__logo { 
         padding-left: 10px;
-        width: 123px;
-        height: 62px;
+        max-width: 123px;
+        max-height: 62px;
     } 
+    &__logo-img { 
+        padding: 4px 30px;
+        height: 90%;
+        width: 90%;
+        // @media (min-width: 768px), (max-width: 768px) {
+        //     padding: 4px 30px;
+        //   }
+    }
     
     &__menu { 
         display: flex;
@@ -12,6 +20,16 @@
         border-radius:  50px;
         font-family: 'Proxima Nova';
         
+    }
+    &__menu-img { 
+        padding: 4px 30px;
+        height: 90%;
+        width: 90%;
+        // @media (min-width: 768px), (max-width:768px) {
+        //     padding: 0;
+        //     height: 70%;
+        // width: 90%;
+        //   }
     }
     ul{
         display: flex;
@@ -30,14 +48,7 @@
        
 
     }
-    img { 
-        padding: 4px 30px;
-        height: 90%;
-        width: 90%;
-      
    
-        
-    }
     a {
         padding-left:  10px;
         padding-top: 5px;
@@ -49,4 +60,40 @@
         }
         
     }
+    @media  (max-width: 1023px) {
+       margin-top: 30px;
+        &__menu-img { 
+            padding: 0;
+            height: 70%;
+        width: 90%;
+        }
+      }
+      @media  (max-width: 767px) {
+        
+        margin-top: 30px;
+
+        &__logo { 
+            margin: 0 auto;
+        } 
+        &__menu { 
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+         &__menu-img { 
+             padding: 0;
+             height: 70%;
+         width: 90%;
+         }
+         ul{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 40px;
+            flex-wrap: wrap;
+        }
+        li { 
+            padding: 2px 16px;
+            font-size: 25px;
+        }
+       }
 }

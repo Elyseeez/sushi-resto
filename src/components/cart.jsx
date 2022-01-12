@@ -47,8 +47,8 @@ function Cart () {
             </div>
             <div className="cart__bottom">
               <div className="cart__bottom-details">
-                <span> Total Ordered <b>{totalCount}</b> </span>
-                <span> total price: <b>{totalPrice} $</b> </span>
+                <span className="cart__bottom-text"> Total Ordered: <b>{totalCount}</b> </span>
+                <span className="cart__bottom-text"> total price: <b>{totalPrice} $</b> </span>
               </div>
               <div className="cart__clear"> 
               <span onClick={onClearCart}>Clear basket</span>
